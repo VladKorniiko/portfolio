@@ -1,0 +1,122 @@
+.hero-title {
+  padding-top: 96px;
+  margin-bottom: 40px;
+}
+.hero-link {
+  display: inline-flex;
+  height: 92px;
+  width: 100%;
+  padding: 32px 0;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.svg-hero-link {
+  fill: var(--accet-green);
+  height: 100%;
+  margin-right: 12px;
+  transition: fill 0.3s ease-in-out;
+}
+
+.hero-link:hover .arrow-link {
+  transform: translateX(160px);
+}
+.hero-link:hover .svg-hero-link {
+  fill: var(--white) !important;
+}
+
+.hero-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  transition: background-color 0.3s ease-in-out;
+  background-color: var(--light-accent);
+}
+
+.hero-link:hover .hero-btn {
+  background-color: var(--accet-green);
+}
+
+.hero-list-socials {
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0px;
+  height: 232px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.hero-item-soc {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.bg-container {
+  background-image: url(../img/hero-background-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .bg-container {
+    background-image: url(../img/hero-background-tablet.png);
+    padding-bottom: 80px;
+  }
+
+  .hero-btn {
+    right: 290px;
+    width: 261px;
+  }
+
+  .hero-list-socials {
+    flex-direction: row;
+    gap: 40px;
+    height: 104px;
+  }
+  .hero-link {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .bg-container {
+    background-image: url(../img/hero-background-dt.png);
+    padding-bottom: 116px;
+  }
+  .hero-btn {
+    left: 227px;
+    width: 261px;
+    height: 96px;
+  }
+  .arrow-link {
+    left: 72px;
+  }
+  .hero-title {
+    padding-top: 184px;
+    margin-bottom: 40px;
+  }
+  .wrapper {
+    display: flex;
+    gap: 136px;
+  }
+}
