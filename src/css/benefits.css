@@ -1,0 +1,123 @@
+.benefits {
+}
+.container {
+}
+.benefits-spam {
+  color: var(--accet-green);
+}
+.benefits-title {
+  margin-bottom: 40px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.benefits-item {
+}
+
+.icons-container {
+  background-color: var(--light-accent);
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--light-accent);
+  margin-bottom: 16px;
+  padding: 12px;
+}
+.benefits-icon {
+  stroke: var(--accet-green);
+}
+.benefits-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.benefits-item-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .grid1 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .grid2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .grid3 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .grid4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .grid1 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .grid2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .grid3 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .grid4 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .benefits {
+    padding-top: 48px;
+  }
+
+  .benefits-title {
+    width: 681px;
+    letter-spacing: 0.01em;
+  }
+  .benefits-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .benefits-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 526px;
+    height: 100%;
+    background-image: url(/img/benefits-bg.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) 50px;
+    background-size: contain;
+    pointer-events: none;
+    filter: blur(3.7px);
+  }
+
+  .benefits-title {
+    position: relative;
+    top: 135px;
+  }
+}

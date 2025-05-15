@@ -69,6 +69,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  transition: color 0.1s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .bg-container {
@@ -118,5 +119,10 @@
   .wrapper {
     display: flex;
     gap: 136px;
+  }
+
+  .hero-item-soc:hover {
+    color: var(--accet-green);
+    transform: scale(1.05);
   }
 }
