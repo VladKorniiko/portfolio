@@ -37,6 +37,11 @@
   .header-nav-item {
     font-weight: 300;
     letter-spacing: 0.03em;
+    transition: color 0.1s ease-in-out, transform 0.2s ease-in-out;
+  }
+  .header-nav-item:hover {
+    transform: scale(1.05);
+    color: var(--accet-green);
   }
   .burger-btn {
     display: none;

@@ -101,14 +101,19 @@
     width: 336px;
     margin-bottom: 24px;
   }
+
+  .about-second-container {
+    display: flex;
+    gap: 32px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .about-wrapper {
-    gap: 80px 132px;
+    gap: 60px 130px;
     padding-left: 210px;
   }
   .about-bio-text {
-    width: 488px;
+    max-width: 100%;
   }
   .about-education-text {
     width: 360px;
@@ -123,5 +128,8 @@
     background-image: url('../img/abot-me-background-tablet.png');
     background-size: 336px 252px;
     background-position: 870px 650px;
+  }
+  .about-second-container {
+    gap: 130px;
   }
 }

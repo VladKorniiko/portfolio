@@ -1,0 +1,114 @@
+.projects-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-load-btn {
+  padding: 12px 24px;
+  display: block;
+  margin: 40px auto 0;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.projects-load-btn::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accet-green);
+  height: 2px;
+  width: 107px;
+  bottom: 10px;
+  left: 15%;
+}
+
+.projects-item {
+  margin: 0 auto;
+}
+.projects-img {
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+.projects-item-stack {
+  margin-bottom: 16px;
+}
+.projects-item-title {
+  margin-bottom: 16px;
+}
+
+.projects-btn {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 125px;
+  height: 48px;
+  background-color: var(--light-grey);
+  margin-top: 16px;
+  margin-left: auto;
+  transition: 0.3s ease-in-out;
+}
+.projects-icon {
+  stroke: var(--accet-green);
+}
+@media only screen and (min-width: 768px) {
+  .projects-load-btn {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .projects-load-btn::after {
+    width: 119px;
+    bottom: 10px;
+    left: 14%;
+  }
+  .projects-img {
+    margin-bottom: 16px;
+    border-radius: 24px;
+    width: 704px;
+    height: 404px;
+  }
+  .projects-item-stack {
+    margin-bottom: 20px;
+  }
+  .projects-info-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projects-btn {
+    margin-top: auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .projects-load-btn {
+    margin-top: 80px;
+  }
+  .projects-load-btn:hover {
+    color: var(--accet-green);
+  }
+  .projects-btn:hover {
+    background-color: var(--hover-grey);
+    transform: scale(1.05);
+  }
+
+  .projects-img {
+    width: 1008px;
+    height: 580px;
+  }
+}
