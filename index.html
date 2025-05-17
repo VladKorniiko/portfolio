@@ -10,7 +10,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CvTxNTye.css">
+    <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-DftXzQBe.js">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-pvxkJjp9.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Dac9M8qE.css">
   </head>
   <body>
     <header class="header">
@@ -20,9 +22,9 @@
     </a>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li class="header-nav-item"><a href="#">About me</a></li>
-        <li class="header-nav-item"><a href="#">Projects</a></li>
-        <li class="header-nav-item"><a href="#">Contacts</a></li>
+        <li class="header-nav-item"><a href="#about">About me</a></li>
+        <li class="header-nav-item"><a href="#projects">Projects</a></li>
+        <li class="header-nav-item"><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
     <button class="burger-btn" type="button">
@@ -143,41 +145,43 @@
         </p>
       </div>
 
-      <div class="education-wrapper">
-        <h3 class="about-item-title">EDUCATION</h3>
-        <ul class="education-list">
-          <li class="education-item">
-            <p class="about-education-text">
-              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-              York
-            </p>
-          </li>
-          <li class="education-item">
-            <p class="about-education-text">
-              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-              School, New York
-            </p>
-          </li>
-          <li class="education-item">
-            <p class="about-education-text">
-              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="role-wrapper">
-        <h3 class="about-item-title">ROLE</h3>
-        <ul class="role-list">
-          <li class="role-item">
-            <p class="about-role-text">Frontend development</p>
-          </li>
-          <li class="role-item">
-            <p class="about-role-text">HeadlessCMS, Wordpress</p>
-          </li>
-          <li class="role-item">
-            <p class="about-item-text">Blender (enjoy)</p>
-          </li>
-        </ul>
+      <div class="about-second-container">
+        <div class="education-wrapper">
+          <h3 class="about-item-title">EDUCATION</h3>
+          <ul class="education-list">
+            <li class="education-item">
+              <p class="about-education-text">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+            </li>
+            <li class="education-item">
+              <p class="about-education-text">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+            </li>
+            <li class="education-item">
+              <p class="about-education-text">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="role-wrapper">
+          <h3 class="about-item-title">ROLE</h3>
+          <ul class="role-list">
+            <li class="role-item">
+              <p class="about-role-text">Frontend development</p>
+            </li>
+            <li class="role-item">
+              <p class="about-role-text">HeadlessCMS, Wordpress</p>
+            </li>
+            <li class="role-item">
+              <p class="about-item-text">Blender (enjoy)</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -202,6 +206,16 @@
         id="techSkillsList4"
       ></ul>
     </div>
+  </div>
+</section>
+
+      <section id="projects">
+  <div class="container">
+    <h2 class="projects-title">my <span class="color-span">projects</span></h2>
+    <ul class="projects-list"></ul>
+    <button class="projects-load-btn" type="button" id="load-more">
+      load more
+    </button>
   </div>
 </section>
 
@@ -262,6 +276,129 @@
         </li>
       </ul>
     </div>
+  </div>
+</section>
+
+      <section id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      frequently asked <span class="color-span">question</span>
+    </h2>
+    <ul class="accordion-container">
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          What programming languages ​​are most often used in your project?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          What are the deadlines for the project?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          What payment methods do you accept?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          How can I contact you?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          Do you provide advice or support?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac">
+        <h3 class="ac-header caption">
+          <button type="button" class="ac-trigger"></button>
+          What does the process of developing a software product look like from
+          idea to implementation?
+          <span class="ac-span-icon">
+            <svg class="ac-icon" width="24" height="24">
+              <use href="../img/icons/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </span>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
