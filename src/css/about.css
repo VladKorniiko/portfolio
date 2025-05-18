@@ -125,7 +125,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../img/abot-me-background-tablet.png');
+    background-image: url('./img/abot-me-background-tablet.png');
     background-size: 336px 252px;
     background-position: 870px 650px;
   }
